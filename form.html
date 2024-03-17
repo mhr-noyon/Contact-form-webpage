@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact form</h1>
+        <form action="">
+            <div class="form">
+                <div class="Name">
+                        <label for="name">Your Name</label> 
+                        <input type="text" id = "FirstName" name="name" placeholder="First Name" class="fname">
+                        <input type="text" id = "LastName" name="name" placeholder="Last Name" class="lname">
+                </div>
+               <div class="Mail">   
+                        <label for="email">Your Email</label>
+                        <input type="email" id = "email" name="email" placeholder="eg: hello@gmail.com">
+               </div>
+               <div class="Phone">
+                        <label for="phone">Phone*</label> 
+                        <input type="" id = "phone1" name="phone" placeholder="###" size="3" required>
+                        <input type="number" id = "phone2" name="phone" placeholder="###" size="3" required>
+                        <input type="number" id = "phone3" name="phone" placeholder="####" size="4" maxlength="4" required>
+                </div>
+                <div class="Message-subject">
+                        <label for="subject">Message Subject*</label>
+                        <select name="subject" id="message-subject">
+                            <option value="Computer club related">Computer club related</option>
+                            <option value="Robotics club related">Robotics club related</option>
+                            <option value="Cultural club related">Cultural club related</option>
+                            <option value="Language club related">Language club related</option>
+                            <option value="Others" selected>Others</option>
+                        </select>           
+                </div>
+                <div class="Message">
+                    <label>Message</label>
+                    <textarea name="message" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="Verification">
+                        <label for="verification">Verification</label>
+                        <div class="Security">
+                            <input type="checkbox" name="verification">
+                            <h3>I am not a Robot.</h3>
+                            <img src="captcha.png" alt="Captcha-icon">
+                        </div>
+                </div>
+                <hr>
+                <div class="Btn">
+                    <button type="submit">SUBMIT FORM</button>
+                </div>     
+            </div>       
+        </form>
+    </div>
+</body>
+</html>
+

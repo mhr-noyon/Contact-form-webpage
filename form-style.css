@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    padding: 20px;
+    height: 100vh;
+    background-image: url('background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container{
+    background: linear-gradient(135deg,#f906e8, #32adff);
+    max-width: 800px;
+    width: 100%;
+    border-radius: 5%;
+    padding: 40px 30px;
+    margin: auto;
+}
+.container>h1{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 20px 0;
+    font-size: 40px;
+}
+.form>div{
+    width: 100%;
+    margin: 20px 10px;
+    width: 80%;
+}
+label{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    width: 170px;
+    color: white;
+}
+
+input, select{
+    width: 190px;
+    font-size: 15px;
+    height: 35px;
+    margin-right: 8px;
+    padding: 5px;
+    outline: none;
+}
+.Phone input{
+    width: 120px;
+}
+.Mail input{
+    width: 385px;
+}
+.Message{
+    width: 100%;
+}
+.Message>textarea{
+    vertical-align: top;
+}
+.Verification{
+    display: flex;
+}
+.Security{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    display: flex;
+}
+.Verification input{
+    width: 30px;
+}
+.Verification h3{
+    margin-top: 7px;
+    font-size: 15px;
+}
+.Verification img{
+    width: 40px;
+    margin-left: 50px;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    width: 180px;
+    height: 40px;
+
+    font: bold;
+    font-size: 15px;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(252, 170, 255);
+    color: black;
+}
